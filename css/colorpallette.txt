@@ -1,0 +1,6 @@
+
+dark purple: #2C2C5Cff
+blue: #443C70ff
+violet: #694264ff
+tan: #FEDBC7ff
+red: #AB615Eff
