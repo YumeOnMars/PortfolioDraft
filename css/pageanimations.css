@@ -1,0 +1,8 @@
+html.is-changing .transition-left {
+    transform: translateX(-100px);
+}
+
+.transition-left {
+        transition: .5s;
+    transform: translateX(0);
+}
