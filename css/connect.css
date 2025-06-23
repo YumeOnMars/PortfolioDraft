@@ -12,7 +12,7 @@ html, body, main {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;    
+    z-index: -1;   
 }
 
 .center {
@@ -23,13 +23,15 @@ html, body, main {
     border: solid white 3px;
     width: 1000px;
     height: 500px;
+    z-index: 1;
 }
 
 .FormTitle {
-    color: rgb(255, 185, 8);
-    text-shadow: 3px 3px 5px rgb(255, 142, 12);
+    color: rgb(166, 0, 255);                                                                     rgb(255, 89, 0);
+    font-weight: bolder;
     font-size: 35px;
-    z-index: 1;
+    padding: 10px 50px;
+    border-radius: 30px;
 }
 
 .formContainer {
@@ -40,6 +42,7 @@ html, body, main {
     width: 100%;
     height:100%;
 }
+
 .form {
     display: flex;
     flex-direction: column;
@@ -60,7 +63,9 @@ html, body, main {
 
 .form textarea {
     border: solid white 3px;
-    background-color: rgba(255, 255, 255, 0.254);
+    border-radius: 30px;    
+    background-color: #ffffff41;
+    backdrop-filter: blur(1px);
     width: 600px;
     height: 200px;
 }
