@@ -74,7 +74,7 @@ header {
     background-color: rgb(28, 8, 74);
 }
 
-#ConnectBtn:hover {
+#HomeBtn:hover {
     transition: ease-in-out .5s;
     background-color: rgb(28, 8, 74);
 }
