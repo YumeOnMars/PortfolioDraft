@@ -1,0 +1,192 @@
+html, body, main {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(34, 2, 122);
+}
+
+#abtmevid {
+    position: absolute;
+    z-index: 0;
+    mix-blend-mode: hard-light;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #abtmevid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #abtmevid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+header {
+    position: sticky;
+    padding-top: 25px;
+    width: 100%;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+}
+.navBarContainer {
+    display:flex;
+    width: 100%;
+    top: 25px;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+.navBar {
+    background-color: rgba(255, 255, 255, 0.241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    backdrop-filter: blur(15px);
+}
+
+.navBar ul {
+    padding-right: 27px;
+    padding-left: 27px;
+}
+
+.navBar ul li {
+    display: inline;
+
+}
+
+#ProjectsBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#PassionsBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#ConnectBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#SkillsBtn {
+    padding: 12px 31px;
+}
+
+#SkillsBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#AboutMeBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+.navBar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto";
+
+    list-style-type: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 27px;
+    padding-left: 27px;
+    border-radius: 30px;
+}
+
+.AboutMeSection {
+    background-color: rgb(35, 29, 82);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    box-shadow: 0 0 15px black;
+    z-index: 3;
+}
+
+.abContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    gap: 150px;
+    z-index: 3;
+    backdrop-filter: blur(20px);
+    background-color: rgba(49, 1, 28, 0.438);
+    border-radius: 100px;
+    border: white solid 5px;
+}
+
+.abtextContainer {
+    width: 40%;
+    z-index: 3;
+}
+
+.abContainer h2 {
+    position:relative;
+    right: 50px;
+    text-align: left;
+    font-size: 35px;
+    color: rgb(255, 211, 50);
+    word-spacing: 5px;
+    letter-spacing: 3px; 
+    text-shadow: 2px 2px 7px rgba(255, 204, 50, 0.804);
+}
+
+.abContainer p {
+    color: white;
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: .8px;
+    line-height: 1.5;
+    z-index: 3;
+}
+
+#HiSpan {
+    color: rgb(255, 160, 27)
+}
+
+.abContainer img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
+    border: rgb(255, 255, 255) solid 4px;
+    z-index: 3;
+}
+
+.greenspan {
+    color:rgb(141, 255, 47);
+        font-weight: bold;
+}
+
+.yellowspan {
+    color: rgb(255, 220, 62);
+        font-weight: bold;
+}
+
+.pinkspan {
+    color: rgb(255, 53, 97);
+    font-weight: bold;
+}
+
+hr {
+    width: 95%;
+}

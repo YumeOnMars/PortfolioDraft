@@ -1,8 +1,8 @@
-html.is-changing .transition-left {
-    transform: translateX(-100px);
+html.is-animating .transition-left{
+    opacity: 0;
 }
 
-.transition-left {
-        transition: .5s;
-    transform: translateX(0);
+.transition-left{
+    opacity: 1;
+    transition: 2s ease;
 }

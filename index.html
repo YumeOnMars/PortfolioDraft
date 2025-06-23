@@ -5,10 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+        const swup = new Swup();
+    </script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body id="swup" class="transition-fade">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.13/build/spline-viewer.js"></script>
     <spline-viewer loading-anim-type="spinner-small-dark"
         url="https://prod.spline.design/tcMF8aWhhxuy6e25/scene.splinecode"></spline-viewer>

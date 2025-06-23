@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/pageanimations.css">
     <link rel="stylesheet" href="css/home.css">
+    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
     <script src="https://unpkg.com/swup@4"></script>
     <script src="scripts/pageanimations.js"></script>
 </head>
@@ -18,45 +19,27 @@
 
 
     <main id="swup" class="transition-left">
+        <div class="navBarContainer">
         <nav class="navBar">
             <ul>
                 <li><a href="#" id="ProjectsBtn">Projects</a></li>
                 <li><a href="#" id="PassionsBtn">Passions</a></li>
                 <li><a href="#" id="ConnectBtn">Connect</a></li>
                 <li><a href="#" id="SkillsBtn">Skills</a></li>
-                <li><a href="#" id="AboutMeBtn">About Me</a></li>
+                <li><a href="aboutme.html" id="AboutMeBtn">About Me</a></li>
             </ul>
         </nav>
+
+        </div>
         <div class="heroContainer">
             <video autoplay muted loop id="videoBackground">
                 <source src="images/coolarchesvideo.mp4">
             </video>
             <div class="homeTitleContainer">
                 <h1 id="introTitle">Bryan Nguyen | A Passionate Learner</h1>
-                <button id="exploreButton">Explore</button>
+                <button id="exploreButton"><a href="aboutme.html">Explore</a></button>
             </div>
         </div>
-
-        <div class="spacer"></div>
-
-        <div class="aboutMePage">
-            <hr>
-            <div class="abContainer">
-
-                <img src="images/me.jpg">
-                <div class="abtextContainer">
-                    <p>Hi, I’m Bryan. I love collaborating and learning from others while meeting new people along the
-                        way. <br> 
-                        I’m not 100% sure what I want to do yet, but I know it will be something in STEM. I’ve always had a
-                        deep passion for math and chemistry, and while computer science used to feel out of reach, it’s
-                        become something I’ve grown to be genuinely fascinated by.</p>
-                </div>
-            </div>
-        </div>
-
-
-
-
     </main>
 </body>
 
