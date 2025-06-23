@@ -1,0 +1,95 @@
+html, body, main {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(34, 2, 122);
+}
+
+.center {
+    display: flex;
+
+}
+
+
+
+header {
+    position: sticky;
+    padding-top: 25px;
+    width: 100%;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+}
+.navBarContainer {
+    display:flex;
+    width: 100%;
+    top: 25px;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+.navBar {
+    background-color: rgba(255, 255, 255, 0.241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    backdrop-filter: blur(15px);
+}
+
+.navBar ul {
+    padding-right: 27px;
+    padding-left: 27px;
+}
+
+.navBar ul li {
+    display: inline;
+
+}
+
+#ProjectsBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#PassionsBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#HomeBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#SkillsBtn {
+    padding: 12px 31px;
+}
+
+#SkillsBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#AboutMeBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+.navBar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto";
+
+    list-style-type: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 27px;
+    padding-left: 27px;
+    border-radius: 30px;
+}

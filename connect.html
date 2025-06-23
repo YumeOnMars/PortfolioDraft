@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="css/pageanimations.css">
+    <link rel="stylesheet" href="css/connect.css">
+    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
+</head>
+
+<body> 
+    <header>
+        <div class="navBarContainer">
+            <nav class="navBar">
+                <ul>
+                    <li><a href="#" id="ProjectsBtn">Projects</a></li>
+                    <li><a href="#" id="PassionsBtn">Passions</a></li>
+                    <li><a href="home.html" id="HomeBtn">Home</a></li>
+                    <li><a href="#" id="SkillsBtn">Skills</a></li>
+                    <li><a href="/aboutme.html" id="AboutMeBtn">About Me</a></li>
+                </ul>
+    </header>
+
+    <main>
+        <video loop autoplay muted id="connectBackground">
+            <source src="images/contactmebackground.mp4">
+        </video>
+        <section class="ConnectPage">
+            <div class="center">
+                <div class="formContainer">
+                      <h3 class="FormTitle">Contact Me</h3>
+                    <form action="" method="POST" class="form">
+                        <input type="hidden" name="access_key" value="9327069a-9648-462f-ae6b-b6d443d2d433">
+                        <input type="text" name="name" required>
+                        <input type="email" name="email" required>
+                        <textarea name="message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="socialIcons"></div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
