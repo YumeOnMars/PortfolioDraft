@@ -21,17 +21,18 @@ html, body, main {
     align-items: center;
     border-radius: 50px;
     border: solid white 3px;
-    width: 1000px;
-    height: 500px;
+    width: 900px;
+    height: 700px;
     z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 .FormTitle {
-    color: rgb(166, 0, 255);                                                                     rgb(255, 89, 0);
+    color: rgb(0, 255, 195);                                                       
     font-weight: bolder;
-    font-size: 35px;
-    padding: 10px 50px;
+    font-size: 40px;
     border-radius: 30px;
+    margin-bottom: 0;
 }
 
 .formContainer {
@@ -48,30 +49,74 @@ html, body, main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 .form input {
+    color:rgb(255, 255, 255);
+    font: "Roboto";
+    font-size: 16px;
     width: 600px;
     height: 45px;
     border: solid white 1px;
-    background-color: rgba(255, 255, 255, .123);
-    backdrop-filter: blur(15px);
+    background-color: #00000043;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 24px;
 }
+
+button:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
 
 .form textarea {
-    border: solid white 3px;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid white 1px;
     border-radius: 30px;    
-    background-color: #ffffff41;
-    backdrop-filter: blur(1px);
+    background-color: #00000043;
+    backdrop-filter: blur(8px);
     width: 600px;
     height: 200px;
+    padding-left: 24px;
+    padding-top: 20px;
 }
 
-.form button {
-    margin-top: 15px;
+input:focus, textarea:focus {
+  outline: white 3px solid;
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+input:focus::placeholder, textarea:focus::placeholder{
+    color: transparent;
+}
+
+.socialIcons {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.socialIcons img {
+    border-radius: 40px;
+    padding: 3px;
+    border: solid 2px rgb(232, 46, 157);
+    height: 55px; 
+    width: 55px;
+}
+
+.socialIcons button {
     width: 200px;
     height: 50px;
     font-weight: bolder;

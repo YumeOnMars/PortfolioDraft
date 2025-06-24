@@ -33,15 +33,19 @@
             <div class="center">
                 <div class="formContainer">
                       <h3 class="FormTitle">Contact Me</h3>
-                    <form action="" method="POST" class="form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="form">
                         <input type="hidden" name="access_key" value="9327069a-9648-462f-ae6b-b6d443d2d433">
-                        <input type="text" name="name" required>
-                        <input type="email" name="email" required>
-                        <textarea name="message" required></textarea>
-                        <button type="submit">Submit</button>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email"required>
+                        <textarea name="message" placeholder="Type Message Here"required></textarea>
+                        <div class="socialIcons">
+                            <img src="/images/githubicon.png">
+                            <button type="submit">Submit</button>   
+                            <img src="/images/phone.png">   
+                        </div>
+
                     </form>
                 </div>
-                <div class="socialIcons"></div>
             </div>
         </section>
     </main>

@@ -29,12 +29,12 @@ html, body, main {
 
 
 header {
-    position: sticky;
+    position: absolute;
     padding-top: 25px;
     width: 100%;
-    position: absolute;
     display:flex;
     justify-content: center;
+    z-index: 999;
 }
 .navBarContainer {
     display:flex;
