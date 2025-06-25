@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/projects.css">
-    <script src="scripts/pageanimations.js"></script>
-    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
 </head>
 
 <body>
@@ -27,13 +25,26 @@
     </header>
 
     <main>
-        <section class="ProjectsPage">
+        <video autoplay muted loop id="ProjectStartBackground">
+            <source src="images/coolsportcar.mp4">
+        </video>
+
+        <video autoplay muted loop id="ProjectDisplayingBackground">
+            <source src="images/citywallforporject.mp4">
+        </video>
+        <section class="ProjectsPageStart">
             <div class="center">
+                <button id="RevealProjectsBtn">Reveal</button>
+            </div>
+
+            <div class="ProjectsAnimation">
+                <img src="images/tennispic.jpg" id="tennisPic">
 
             </div>
         </section>
     </main>
 
+    <script src="scripts/projects.js"></script>
 
 </body>
 

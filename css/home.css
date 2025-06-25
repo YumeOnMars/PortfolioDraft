@@ -10,13 +10,20 @@ html, body {
 header {
     position: absolute;
     padding-top: 25px;
-    width: 100%;
+    width: 100vw;
     display:flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
 }
 
+.logoName {
+    position: absolute;
+    color: rgb(0, 255, 128);
+    top: 7%;
+    left: 2%;
+    font-weight: bolder;
+}
 
 #videoBackground {
     position: absolute;
@@ -246,3 +253,5 @@ header {
 hr {
     width: 95%;
 }
+
+

@@ -9,13 +9,75 @@ html, body, main {
 
 .center {
     display: flex;
-
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
+#RevealProjectsBtn {
+    font-weight: bolder;
+    width: 250px;
+    z-index: 1;
+    height: 60px;
+    border-radius: 15px;
+    background-color: rgb(179, 0, 255);
+    border: white solid 3px;
+    color: white;
+}
 
+#ProjectStartBackground {
+    position: absolute;
+    z-index: 0;
+}
+
+#ProjectDisplayingBackground {
+    display: none;
+    position: absolute;
+    z-index: 0;
+}
+
+.ProjectsAnimation {
+    position: absolute;
+    top: 900px;
+    left: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+#tennisPic {
+    height: 500px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #ProjectDisplayingBackground  {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #ProjectDisplayingBackground  {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #ProjectStartBackground  {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #ProjectStartBackground  {
+        width: auto;
+        height: 100%;
+    }
+}
 
 header {
-    position: sticky;
     padding-top: 25px;
     width: 100%;
     position: absolute;

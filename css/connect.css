@@ -28,11 +28,12 @@ html, body, main {
 }
 
 .FormTitle {
-    color: rgb(0, 255, 195);                                                       
+    color: rgb(119, 255, 216);                                                       
     font-weight: bolder;
     font-size: 40px;
     border-radius: 30px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .formContainer {
@@ -126,7 +127,7 @@ input:focus::placeholder, textarea:focus::placeholder{
     height: 55px;
     width: 190px;
     border-radius: 20px;
-    border: rgb(255, 115, 45)solid 4px;
+    border: rgb(255, 174, 133)solid 5px;
     box-shadow: 0 0 10px 3px #ffde7095;
     color: rgb(255, 232, 141);
     text-shadow: 0px 0px 2px yellow;

@@ -51,7 +51,8 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 40px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px 5px #ff00a652;
 }
 
 .navBar ul {
