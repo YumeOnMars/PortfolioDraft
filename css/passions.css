@@ -1,0 +1,147 @@
+
+header {
+    position: absolute;
+    padding-top: 25px;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.logoName {
+    position: absolute;
+    color: rgb(0, 255, 128);
+    top: 7%;
+    left: 2%;
+    font-weight: bolder;
+}
+
+#videoBackground {
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 25px 25px rgba(62, 11, 202, 0.229);
+    z-index: 0;
+      filter: brightness(.9) contrast(1.3) saturate(1.7) hue-rotate(15deg);
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBackground {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBackground {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.navBarContainer {
+    display:flex;
+    position: sticky;
+    top: 25px;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+.navBar {
+    background-color: rgba(72, 39, 60, 0.241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: solid 1px rgba(139, 0, 177, 0.202);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px 5px #2f00ff52;
+}
+
+.navBar ul {
+    padding-right: 27px;
+    padding-left: 27px;
+}
+
+.navBar ul li {
+    display: inline;
+
+}
+
+#ProjectsBtn:hover {
+    background-color: rgb(28, 8, 74);
+    transition: ease-in-out .5s;
+}
+
+#PassionsBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#ConnectBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#SkillsBtn {
+    padding: 12px 31px;
+}
+
+#SkillsBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+#AboutMeBtn:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(28, 8, 74);
+}
+
+.navBar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto";
+    -webkit-text-stroke: black 0.1px;
+    list-style-type: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 27px;
+    padding-left: 27px;
+    border-radius: 30px;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 300px;
+  scroll-snap-align: center;
+  background-color: #222;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}

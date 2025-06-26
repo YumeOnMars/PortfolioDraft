@@ -1,6 +1,5 @@
 const swup = new Swup({
-  plugins: [new SwupHeadPlugin()],
-  plugins: [new SwupParallelPlugin()]
+  plugins: [new SwupHeadPlugin()]
 });
 
 //To Do: 
