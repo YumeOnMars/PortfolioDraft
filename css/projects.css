@@ -1,4 +1,4 @@
-html, body, main {
+html, body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -217,4 +217,23 @@ header {
 
 #l5 {
     transform: translate(-500%);
+}
+
+.descriptionTextBox {
+    text-indent: 3vw;
+    width: 28vw;
+    height: auto;
+    z-index: 5;
+    position: relative;
+    right: 33vw; 
+    bottom: 4vh;
+    background-color: rgba(0, 0, 0, 0.206); 
+    backdrop-filter: blur(10px);
+    border-radius: 2vw;
+    padding: 1.5vw;
+}
+
+.descriptionTextBox p {
+    color: white;
+    font-size: 16px;
 }
