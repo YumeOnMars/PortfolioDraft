@@ -4,3 +4,10 @@ blue: #443C70ff
 violet: #694264ff
 tan: #FEDBC7ff
 red: #AB615Eff
+
+passions color pallete: 
+--russian-violet: #432452ff
+--dark-purple: #341B38ff
+--cardinal: #C92342ff
+--tyrian-purple: #501B36ff
+--magenta-haze: #9D4A81ff

@@ -231,9 +231,138 @@ header {
     backdrop-filter: blur(10px);
     border-radius: 2vw;
     padding: 1.5vw;
+    display:none;
 }
 
 .descriptionTextBox p {
     color: white;
     font-size: 16px;
+}
+
+
+
+.descriptionTextBox2 {
+    text-indent: 3vw;
+    width: 28vw;
+    height: auto;
+    z-index: 5;
+    position: relative;
+    left: 33vw; 
+    top: 10vh;
+    background-color: rgba(0, 0, 0, 0.206); 
+    backdrop-filter: blur(20px);
+    border-radius: 2vw;
+    padding: 1.5vw;
+    display: none;
+}
+
+.descriptionTextBox2 p {
+    color: white;
+    font-size: 16px;
+}
+
+
+
+.descriptionTextBox3 {
+    text-indent: 3vw;
+    width: 28vw;
+    height: auto;
+    z-index: 5;
+    position: relative;
+    right: 33vw; 
+    bottom: 4vh;
+    background-color: rgba(0, 0, 0, 0.206); 
+    backdrop-filter: blur(10px);
+    border-radius: 2vw;
+    padding: 1.5vw;
+    display:none;
+}
+
+.descriptionTextBox3 p {
+    color: white;
+    font-size: 16px;
+}
+
+
+
+.descriptionTextBox4 {
+    text-indent: 3vw;
+    width: 28vw;
+    height: auto;
+    z-index: 5;
+    position: relative;
+    right: 33vw; 
+    bottom: 4vh;
+    background-color: rgba(0, 0, 0, 0.206); 
+    backdrop-filter: blur(10px);
+    border-radius: 2vw;
+    padding: 1.5vw;
+    display:none;
+}
+
+.descriptionTextBox4 p {
+    color: white;
+    font-size: 16px;
+}
+
+#cookingImg {
+    position: relative;
+    top: 5vh;
+    right: 33vw;
+    height: 22%;
+    display: none;
+    border: solid rgb(85, 0, 255) 3px;
+    box-shadow: 0 0 10px #3300ffca;
+    border-radius: 10px;
+}
+
+
+.viewBtn {
+    color:whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 37%;
+    width: 25%;
+    height: 18%;
+    border-radius: 5px;
+    border: white solid 1px;
+    background-color: rgba(93, 0, 255, 0.794);
+}
+
+.descriptionTextBox5 {
+    text-indent: 3vw;
+    width: 28vw;
+    height: auto;
+    z-index: 5;
+    position: relative;
+    right: 33vw; 
+    top: 40vh;
+    background-color: rgba(0, 0, 0, 0.206); 
+    backdrop-filter: blur(10px);
+    border-radius: 2vw;
+    padding: 1.5vw;
+    display: none;
+}
+
+.descriptionTextBox5 p {
+    color: white;
+    font-size: 16px;
+}
+
+
+.RobloxImages {
+    position: relative;
+    left: 35vw;
+    bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    gap: 1vh;
+    display: none;
+}
+
+.RobloxImages img {
+    border-radius: 10px;
+    border: solid rgb(85, 0, 255) 3px;
+    box-shadow: 0 0 10px #3300ffca;
+    width: 200px;
 }
