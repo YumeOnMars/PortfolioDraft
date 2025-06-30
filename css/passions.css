@@ -5,19 +5,38 @@ body, html {
     width: 100%;
     background-color: rgb(201, 35, 65);
     overflow-x: hidden;
-}
-
-#passionsBg {
-    position: absolute;
-    z-index: 0;
-    width: 100vw;
-    filter: saturate(1) hue-rotate(-3deg);
+    background-image: url(/images/passionbg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Robotics {
-    box-shadow: 0 0 30px black;
+    margin: 8vh 2vw;
+    border-radius: 3vw;
+    box-shadow: 0 0 50px black;
+    padding: 3vh;
 }
 
+.Tennis {
+    margin: 8vh 2vw;
+    border-radius: 3vw;
+    box-shadow: 0 0 50px black;
+    padding: 3vh;    
+}
+
+.InteractClub {
+    margin: 8vh 2vw;
+    border-radius: 3vw;
+    box-shadow: 0 0 50px black;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.icContent {
+    display: flex;
+    justify-content: center;
+}
 .Robotics h2 {
     font-family: "Caveat";
     text-align: left;
@@ -25,6 +44,20 @@ body, html {
     color: rgb(104, 91, 255);
     text-shadow: 0 0 15px rgb(0, 30, 255);
     z-index: 1;
+}
+
+
+.InteractClub h2 {
+    font-family: "Caveat";
+    text-align: center;
+    font-size: 7em;
+    color: rgb(255, 200, 0);
+    text-shadow: 0 0 15px rgb(255, 247, 0);
+    z-index: 1;
+}
+
+#pres {
+    color: rgb(195, 255, 0);
 }
 
 .Row1 {
@@ -38,37 +71,81 @@ body, html {
 .Row1 img {
     border: solid 5px rgb(180, 180, 255);
     border-radius: 2vw;
-        box-shadow: 0 0 30px rgb(0, 0, 0);
-            z-index: 1;
+    z-index: 1;
 }
 
 .Row2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10vh;
+    padding-top: 5vh;
+    z-index: 1;
+
 }
 
 #roboticVideo {
     border: solid 5px rgb(72, 72, 255);
     border-radius: 2vw;
     box-shadow: 0 0 70px rgb(9, 0, 47);
+        z-index: 1;
+
 
 }
 
 .roboticTitle {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 28vh;
     gap: 35vw;
+    z-index: 1;
+
 }
 
 #img234 {
-    position: relative;
-    top: 250px;
-    right: 400px;
+        z-index: 1;
+
 }
+
+.Tennis h2 {
+    font-family: "Caveat";
+    text-align: center;
+    font-size: 10em;
+    color: rgb(118, 255, 91);
+    text-shadow: 0 0 15px rgb(255, 249, 85);
+    z-index: 1;
+}
+
+.tRow1 {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.tRow2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+}
+
+.tRow1 img {
+    border: solid 5px rgb(180, 180, 255);
+    border-radius: 2vw;
+    z-index: 1;
+}
+
+.tRow2 img {
+    border: solid 5px rgb(180, 180, 255);
+    border-radius: 2vw;
+        box-shadow: 0 0 30px rgb(0, 0, 0);
+            z-index: 1;
+}
+
 hr {
     width: 95vw;
+        z-index: 1;
+
 }
 header {
     position: absolute;
@@ -214,3 +291,20 @@ header {
     border-radius: 30px;
 }
 
+.icolumn1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#iimg1 {
+    width: 40vw;
+}
+#iimg2 {
+        width: 18vw;
+
+}
+
+#ivid1 {
+        width: 28vw;
+
+}
