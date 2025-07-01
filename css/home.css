@@ -1,29 +1,114 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100%;
     background-color: rgb(34, 2, 122);
     z-index: -10;
-}   
+    overflow-x: hidden;
+}
+
+.off-screen-menu {
+    position: absolute;
+    width: 18vw;
+    height: 100vh;
+    right: -450px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.273);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    max-width: 450px;
+    font-size: 3rem;
+    transition-timing-function: .3s ease;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+.ham-menu {
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+    z-index: 999;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: azure;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(2) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: (-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+opacity: 0;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: (-50%, 50%) rotate(-45deg);
+}
+
+
+
+.off-screen-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.off-screen-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    gap: 1vh;
+}
+
+.off-screen-menu ul li {
+    display: block;
+    list-style-type: none;
+    padding: 3vh;
+    width: 90%; 
+}
 
 header {
     position: absolute;
     padding-top: 25px;
     width: 100vw;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
 }
 
-.logoName {
-    position: absolute;
-    color: rgb(0, 255, 128);
-    top: 7%;
-    left: 2%;
-    font-weight: bolder;
-}
 
 #videoBackground {
     position: absolute;
@@ -33,7 +118,7 @@ header {
     transform: translate(-50%, -50%);
     box-shadow: 0 25px 25px rgba(62, 11, 202, 0.229);
     z-index: 0;
-      filter: brightness(.9) contrast(1.3) saturate(1.7) hue-rotate(15deg);
+    filter: brightness(.9) contrast(1.3) saturate(1.7) hue-rotate(15deg);
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -67,10 +152,10 @@ header {
     display: block;
     font-weight: bolder;
     font-family: "Roboto";
-    font-size: 18px;
+    font-size: 14px;
     background-color: rgb(207, 87, 83);
-    height: 55px;
-    width: 190px;
+    height: 45px;
+    width: 160px;
     border-radius: 20px;
     border: rgb(217, 95, 34)solid 4px;
     box-shadow: 0 0 10px 3px rgba(255, 206, 145, 0.584);
@@ -84,6 +169,7 @@ header {
     letter-spacing: 2px;
     text-align: center;
 }
+
 #exploreButton:hover {
     transform: scale(1.1);
     transition: .2s ease-in-out;
@@ -99,7 +185,7 @@ header {
 }
 
 .navBarContainer {
-    display:flex;
+    display: flex;
     position: sticky;
     top: 25px;
     justify-content: center;
@@ -143,11 +229,8 @@ header {
     background-color: rgb(28, 8, 74);
 }
 
-#SkillsBtn {
-    padding: 12px 31px;
-}
 
-#SkillsBtn:hover {
+#HomeBtn:hover {
     transition: ease-in-out .5s;
     background-color: rgb(28, 8, 74);
 }
@@ -161,9 +244,8 @@ header {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Roboto";
-    -webkit-text-stroke: black 0.1px;
     list-style-type: none;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -174,11 +256,9 @@ header {
 
 #introTitle {
     color: white;
-    font-size: 50px;
+    font-size: 39px;
     font-weight: bolder;
     text-align: center;
     border-radius: 100px;
     text-shadow: 0px 0px 15px rgba(255, 163, 4, 0.847);
 }
-
-

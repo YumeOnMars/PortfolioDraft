@@ -6,6 +6,18 @@ html, body, main {
     width: 100%;
     background-color: rgb(34, 2, 122);
 }
+
+#github:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
+}
+
+#phone:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
+
+}
+
 .ConnectPage {
     height: 100vh;
     width: 100vw;
@@ -16,13 +28,14 @@ html, body, main {
 }
 
 .center {
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     border: solid white 3px;
-    width: 900px;
-    height: 700px;
+    width: 50vw;
+    height: 70vh;
     z-index: 1;
     backdrop-filter: blur(10px);
 }
@@ -30,9 +43,9 @@ html, body, main {
 .FormTitle {
     color: rgb(119, 255, 216);                                                       
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 32px;
     border-radius: 30px;
-    margin-bottom: 0;
+    margin-bottom: 3vh;
     text-align: center;
 }
 
@@ -58,9 +71,9 @@ html, body, main {
 .form input {
     color:rgb(255, 255, 255);
     font: "Roboto";
-    font-size: 16px;
-    width: 600px;
-    height: 45px;
+    font-size: 12px;
+    width: 70%;
+    height: 8%;
     border: solid white 1px;
     background-color: #00000043;
     backdrop-filter: blur(20px);
@@ -77,13 +90,13 @@ button:hover {
 
 .form textarea {
     color:rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 11px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: solid white 1px;
     border-radius: 30px;    
     background-color: #00000043;
     backdrop-filter: blur(8px);
-    width: 600px;
+    width: 70%;
     height: 200px;
     padding-left: 24px;
     padding-top: 20px;
@@ -107,25 +120,24 @@ input:focus::placeholder, textarea:focus::placeholder{
     justify-content: center;
     align-items: center;
     gap: 25px;
+    padding-bottom: 15px;
 }
 
 .socialIcons img {
     border-radius: 40px;
     padding: 3px;
     border: solid 2px rgb(232, 46, 157);
-    height: 55px; 
-    width: 55px;
+    height: 45px; 
+    width: 45px;
 }
 
 .socialIcons button {
-    width: 200px;
+    width: 160px;
     height: 50px;
     font-weight: bolder;
     font-family: "Roboto";
-    font-size: 18px;
+    font-size: 16px;
     background-color: rgb(251, 132, 58);
-    height: 55px;
-    width: 190px;
     border-radius: 20px;
     border: rgb(255, 174, 133)solid 5px;
     box-shadow: 0 0 10px 3px #ffde7095;
@@ -231,7 +243,7 @@ header {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Roboto";
 
     list-style-type: none;

@@ -6,45 +6,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-        <script src="https://unpkg.com/swup@4"></script>
-    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">  
-    <link rel="stylesheet" href="css/pageanimations.css">
+        rel="stylesheet">
     <link rel="stylesheet" href="css/home.css" data-swup-css>
 </head>
 
 <body>
-    <div id="swup" class="transition-swipe">
+
+    <div>
         <header>
-            <h1 class="logoName">Bryan Nguyen</h1>
+
             <div>
                 <nav class="navBar">
                     <ul>
                         <li><a href="projects.html" id="ProjectsBtn">Projects</a></li>
                         <li><a href="passions.html" id="PassionsBtn">Passions</a></li>
+                        <li><a href="index.html" id="HomeBtn">Back</a></li>
                         <li><a href="connect.html" id="ConnectBtn">Connect</a></li>
-                        <li><a href="skills.html" id="SkillsBtn">Skills</a></li>
                         <li><a href="aboutme.html" id="AboutMeBtn">About Me</a></li>
                     </ul>
                 </nav>
             </div>
+
         </header>
 
 
         <main>
-                    <video autoplay muted loop id="videoBackground">
-                    <source src="images/coolarchesvideo.mp4">
-                </video>
+            <video autoplay muted loop id="videoBackground">
+                <source src="images/coolarchesvideo.mp4">
+            </video>
             <div class="heroContainer">
                 <div class="homeTitleContainer">
                     <h1 id="introTitle">Bryan Nguyen | A Passionate Learner</h1>
-                    <a id="exploreButton" href="aboutme.html"><p>Explore<p></p></a></button>
+                    <a id="exploreButton" href="aboutme.html">
+                        <p>Explore<p></p>
+                    </a></button>
                 </div>
             </div>
         </main>
     </div>
-    <script src="scripts/pageanimations.js"></script>
+    <script src="scripts/navbar.js"></script>
 </body>
 
 </html>

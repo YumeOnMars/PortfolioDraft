@@ -7,12 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
-    <link rel="stylesheet" href="css/pageanimations.css">
     <link rel="stylesheet" href="css/connect.css">
-    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
 </head>
 
-<body> 
+<body>
     <header>
         <div class="navBarContainer">
             <nav class="navBar">
@@ -20,7 +18,7 @@
                     <li><a href="projects.html" id="ProjectsBtn">Projects</a></li>
                     <li><a href="passions.html" id="PassionsBtn">Passions</a></li>
                     <li><a href="home.html" id="HomeBtn">Home</a></li>
-                    <li><a href="skills.html" id="SkillsBtn">Skills</a></li>
+                    <li><a href="connect.html" id="ConnectBtn">Connect</a></li>
                     <li><a href="aboutme.html" id="AboutMeBtn">About Me</a></li>
                 </ul>
     </header>
@@ -32,16 +30,16 @@
         <section class="ConnectPage">
             <div class="center">
                 <div class="formContainer">
-                      <h3 class="FormTitle">Contact Me</h3>
+                    <h3 class="FormTitle">Contact Me</h3>
                     <form action="https://api.web3forms.com/submit" method="POST" class="form">
                         <input type="hidden" name="access_key" value="9327069a-9648-462f-ae6b-b6d443d2d433">
                         <input type="text" name="name" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email"required>
-                        <textarea name="message" placeholder="Type Message Here"required></textarea>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Type Message Here" required></textarea>
                         <div class="socialIcons">
-                            <img src="/images/githubicon.png">
-                            <button type="submit">Submit</button>   
-                            <img src="/images/phone.png">   
+                            <img src="/images/githubicon.png" id="github">
+                            <button type="submit">Submit</button>
+                            <img src="/images/phone.png" id="phone">
                         </div>
 
                     </form>
@@ -50,7 +48,7 @@
         </section>
     </main>
 
-
+<script src="scripts/connect.js"></script>
 </body>
 
 </html>
