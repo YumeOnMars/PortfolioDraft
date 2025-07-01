@@ -5,7 +5,72 @@ html, body, main {
     height: 100%;
     width: 100%;
     background-color: rgb(34, 2, 122);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+#ham-menu {
+    position: fixed;
+    top: 3%; right: 2%;
+    height: 40px;
+    z-index: 9999;
+    filter: invert();
+    transition: ease .2;
+}
+.off-screen-menu {
+    position: absolute;
+    width: 17vw;
+    height: 100vh;
+    right: 0px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.273);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    font-size: 1rem;
+    transition-timing-function: .3s ease;
+    transform: translateX(450px);
+}
+
+.nav-item.active {
+  background-color: rgb(28, 8, 74);
+  
+}
+
+.off-screen-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display:block;
+}
+
+.off-screen-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    gap: 1vh;
+}
+
+.off-screen-menu ul li {
+    display: block;
+    list-style-type: none;
+    padding: 3vh;
+    width: 100%; 
+}
+
+#ham-menu:hover {
+    transform: scale(1.1);
+    transition: ease .2s;
+}
+
+.off-screen-menu ul li:hover {
+    background-color: rgb(255, 0, 102);
+}
+
 
 #github:hover {
     transform: scale(1.1);
@@ -209,34 +274,30 @@ header {
     display: inline;
 
 }
-
 #ProjectsBtn:hover {
-    transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
+    transition: ease-in-out;
 }
 
 #PassionsBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
+
+#ConnectBtn:hover {
+    transition: ease-in-out .5s;
+    border: solid 1px rgb(255, 255, 255);
+}
+
 
 #HomeBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
-}
-
-#SkillsBtn {
-    padding: 12px 31px;
-}
-
-#SkillsBtn:hover {
-    transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
 
 #AboutMeBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
 
 .navBar ul li a {

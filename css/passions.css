@@ -1,4 +1,4 @@
-body, html {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -9,6 +9,76 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none; 
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+#ham-menu {
+    position: fixed;
+    top: 3%; right: 2%;
+    height: 40px;
+    z-index: 9999;
+    filter: invert();
+    transition: ease .2;
+}
+
+#ham-menu:hover {
+    transform: scale(1.1) !important; 
+    transition: ease .2s;
+}
+.off-screen-menu {
+    position: absolute;
+    width: 17vw;
+    height: 100vh;
+    right: 0px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.273);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    font-size: 1rem;
+    transition-timing-function: .3s ease;
+    transform: translateX(450px);
+}
+
+
+.off-screen-menu ul li a {
+    color: white;
+    display:block;
+    text-decoration: none;
+}
+
+
+.nav-item.active {
+  background-color: rgb(28, 8, 74);
+}
+.off-screen-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    gap: 1vh;
+}
+
+.off-screen-menu ul li {
+    display: block;
+    list-style-type: none;
+    padding: 3vh;
+    width: 100%; 
+}
+
+.off-screen-menu ul li:hover {
+    background-color: rgb(255, 0, 102);
 }
 
 
@@ -37,9 +107,9 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 40px;
-    border: solid 1px rgb(217, 34, 80);
+    border: solid 1px rgb(164, 54, 81);
     backdrop-filter: blur(15px);
-    box-shadow: 0 0 20px 5px #ff004c85;
+    box-shadow: 0 0 15px 1px #ff004c85;
 }
 
 .navBar ul {
@@ -151,9 +221,9 @@ header {
 .Band h2 {
     font-family: "Caveat";
     text-align: center;
-    font-size: 3em;
-    color: rgb(0, 255, 128);
-    text-shadow: 0 0 15px rgb(70, 150, 255);
+    font-size: 4em;
+    color: rgb(119, 0, 255);
+    text-shadow: 0 0 5px rgb(255, 255, 0);
     z-index: 1;
     margin: 0;
     margin-top: 2vh;
@@ -176,6 +246,7 @@ header {
     border: solid 5px rgb(180, 180, 255);
     border-radius: 2vw;
     z-index: 1;
+    box-shadow: 0 10px 30px black;
 }
 
 .Row2 {
@@ -205,7 +276,6 @@ header {
 
 #img234 {
         z-index: 1;
-
 }
 
 .Tennis h2 {
@@ -328,31 +398,30 @@ hr {
 }
 
 #ProjectsBtn:hover {
-    background-color: rgb(28, 8, 74);
-    transition: ease-in-out .5s;
+    border: solid 1px rgb(255, 255, 255);
+    transition: ease-in-out;
 }
 
 #PassionsBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
 
 #ConnectBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
 
 
 #HomeBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
 
 #AboutMeBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
-
 .navBar ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -466,10 +535,18 @@ hr {
     border-radius: 2vw;
     box-shadow: 0 0 25px black;
     z-index: 1;
+    
 }
 
 .mbRow2 img {
     border: solid 5px rgb(59, 52, 255);
     border-radius: 2vw;
     z-index: 1;
+        box-shadow: 0 0 50px black;
+
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: ease .5s;
 }

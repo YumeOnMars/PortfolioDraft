@@ -12,15 +12,27 @@
 </head>
 
 <body>
+    <img src="images/hammenu.png" id="ham-menu">
+
+    <div class="off-screen-menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="passions.html">Passions</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="connect.html">Connect</a></li>
+            <li><a href="connect.html">Sources</a></li>
+        </ul>
+    </div>
     <header>
         <div class="navBarContainer">
             <nav class="navBar">
                 <ul>
-                    <li><a href="projects.html" id="ProjectsBtn">Projects</a></li>
-                    <li><a href="passions.html" id="PassionsBtn">Passions</a></li>
-                    <li><a href="home.html" id="HomeBtn">Home</a></li>
-                    <li><a href="connect.html" id="ConnectBtn">Connect</a></li>
-                    <li><a href="aboutme.html" id="AboutMeBtn">About Me</a></li>
+                        <li><a href="projects.html" id="ProjectsBtn" class="nav-item">Projects</a></li>
+                        <li><a href="passions.html" id="PassionsBtn" class="nav-item">Passions</a></li>
+                        <li><a href="home.html" id="HomeBtn" class="nav-item">Home</a></li>
+                        <li><a href="connect.html" id="ConnectBtn" class="nav-item">Connect</a></li>
+                        <li><a href="aboutme.html" id="AboutMeBtn" class="nav-item">About Me</a></li>
                 </ul>
     </header>
 
@@ -49,7 +61,7 @@
                 <p>Many people use AI on a daily basis and talk about how good it is. But the downsides of AI are rarely
                     brought up. My purpose for this website was to inform and spread awareness about the environmental
                     impact AI has on the planet.</p>
-                <button class="viewBtn">View</button>
+                <a href="https://yumeonmars.github.io/AIImpactWebsite/"><button class="viewBtn">View</button></a>
             </div>
 
             <div class="descriptionTextBox2">
@@ -61,7 +73,7 @@
             <div class="descriptionTextBox3">
                 <p>A quiz that calculates how much aura you have through simple scenario questions and saves your
                     results with local storage.</p>
-                <button class="viewBtn">View</button>
+                <a href="https://yumeonmars.github.io/AuraQuiz/"><button class="viewBtn">View</button></a>
             </div>
 
             <div class="descriptionTextBox4">
@@ -88,7 +100,7 @@
     </main>
 
     <script src="scripts/projects.js"></script>
-
+    <script src="scripts/navbar.js"></script>
 </body>
 
 </html>

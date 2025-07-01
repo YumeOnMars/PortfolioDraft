@@ -5,6 +5,65 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: rgb(34, 2, 122);
+    overflow: hidden;
+}
+
+#ham-menu {
+    position: fixed;
+    top: 3%; right: 2%;
+    height: 40px;
+    z-index: 9999;
+    filter: invert();
+    transition: ease .2;
+}
+.off-screen-menu {
+    position: absolute;
+    width: 17vw;
+    height: 100vh;
+    right: 0px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.273);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    font-size: 1rem;
+    transition-timing-function: .3s ease;
+    transform: translateX(450px);
+}
+
+
+.off-screen-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display:block;
+}
+
+.off-screen-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    gap: 1vh;
+}
+
+
+#ham-menu:hover {
+    transform: scale(1.1);
+    transition: ease .2s;
+}
+.off-screen-menu ul li {
+    display: block;
+    list-style-type: none;
+    padding: 3vh;
+    width: 100%; 
+}
+
+.off-screen-menu ul li:hover {
+    background-color: rgb(255, 0, 102);
 }
 
 #projBackground {
@@ -66,6 +125,7 @@ header {
     align-items: center;
     border-radius: 40px;
     backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px 3px rgba(38, 38, 255, 0.399);
 }
 
 .navBar ul {
@@ -79,32 +139,29 @@ header {
 }
 
 #ProjectsBtn:hover {
-    transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
+    transition: ease-in-out;
 }
 
 #PassionsBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
+
+#ConnectBtn:hover {
+    transition: ease-in-out .5s;
+    border: solid 1px rgb(255, 255, 255);
+}
+
 
 #HomeBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
-}
-
-#SkillsBtn {
-    padding: 12px 31px;
-}
-
-#SkillsBtn:hover {
-    transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
 
 #AboutMeBtn:hover {
     transition: ease-in-out .5s;
-    background-color: rgb(28, 8, 74);
+    border: solid 1px rgb(255, 255, 255);
 }
 
 .navBar ul li a {
@@ -316,16 +373,25 @@ header {
     border-radius: 10px;
 }
 
+.viewBtn:hover {
+    transform: scale(1.1);
+    transition: ease 0.4s;
+}
 
 .viewBtn {
     color:whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 37%;
+    margin-bottom: 10px;
     width: 25%;
-    height: 18%;
-    border-radius: 5px;
+    height: 25%;
+    border-radius: 8px;
     border: white solid 1px;
     background-color: rgba(93, 0, 255, 0.794);
+}
+
+.nav-item.active {
+  background-color: rgb(28, 8, 74);
 }
 
 .descriptionTextBox5 {
