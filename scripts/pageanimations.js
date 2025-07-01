@@ -3,10 +3,9 @@ const swup = new Swup({
 });
 
 //To Do: 
-//Create Projects Page (zoom wheel)
-// Replace Skills with Connect and put skills like coding languages in porjects
-// Create Passions Page
-// Spotify Track Player
-// Hamburger Menu with the player inside of it
-// possibly make the spotify track player a widget
-// make clean transition across pages + the reversal of it.
+// Move skills to About me
+//fix NavBar in Each Page
+//rescale everything to fit laptop.
+// Add hamburger menu
+// Do Swup transitions
+//figure out music when clicking explore

@@ -8,6 +8,72 @@ body, html {
     background-image: url(/images/passionbg2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+
+header {
+    position: absolute;
+    padding-top: 25px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+.navBarContainer {
+    display:flex;
+    top: 25px;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+.navBar {
+    background-color: rgba(72, 39, 60, 0.241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: solid 1px rgb(217, 34, 80);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px 5px #ff004c85;
+}
+
+.navBar ul {
+    padding-right: 27px;
+    padding-left: 27px;
+}
+
+.navBar ul li {
+    display: inline;
+
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.7;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.PassionsContent img {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+#ivid1, #roboticVideo {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25%;
 }
 
 .Robotics {
@@ -15,13 +81,15 @@ body, html {
     border-radius: 3vw;
     box-shadow: 0 0 50px black;
     padding: 3vh;
+    scroll-snap-align: start;
 }
 
 .Tennis {
     margin: 8vh 2vw;
     border-radius: 3vw;
     box-shadow: 0 0 50px black;
-    padding: 3vh;    
+    padding: 3vh;  
+    scroll-snap-align: start;
 }
 
 .InteractClub {
@@ -31,29 +99,70 @@ body, html {
     padding: 3vh;
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start;
 }
 
-.icContent {
-    display: flex;
-    justify-content: center;
+.Nextech {
+    margin: 8vh 2vw;
+    border-radius: 3vw;
+    box-shadow: 0 0 50px black;
+    padding: 3vh;
+    scroll-snap-align: start;
+
 }
+
+.Band {
+    margin: 8vh 2vw;
+    border-radius: 3vw;
+    box-shadow: 0 0 50px black;
+    padding: 3vh;
+}
+
+
 .Robotics h2 {
     font-family: "Caveat";
     text-align: left;
-    font-size: 10em;
+    font-size: 6em;
     color: rgb(104, 91, 255);
     text-shadow: 0 0 15px rgb(0, 30, 255);
     z-index: 1;
+    margin: 0;
+    margin-bottom: 3vh;
 }
 
 
 .InteractClub h2 {
     font-family: "Caveat";
     text-align: center;
-    font-size: 7em;
+    font-size: 5em;
     color: rgb(255, 200, 0);
     text-shadow: 0 0 15px rgb(255, 247, 0);
     z-index: 1;
+    margin: 0;
+    margin-bottom: 5vh;
+}
+
+.Nextech h2 {
+    font-family: "Caveat";
+    text-align: center;
+    font-size: 5em;
+    color: rgb(255, 0, 242);
+    text-shadow: 0 0 15px rgb(255, 70, 116);
+    z-index: 1;
+    margin: 0;
+    margin-bottom: 5vh;
+}
+
+.Band h2 {
+    font-family: "Caveat";
+    text-align: center;
+    font-size: 3em;
+    color: rgb(0, 255, 128);
+    text-shadow: 0 0 15px rgb(70, 150, 255);
+    z-index: 1;
+    margin: 0;
+    margin-top: 2vh;
+    margin-bottom: 5vh;  
 }
 
 #pres {
@@ -80,7 +189,6 @@ body, html {
     align-items: center;
     padding-top: 5vh;
     z-index: 1;
-
 }
 
 #roboticVideo {
@@ -88,8 +196,6 @@ body, html {
     border-radius: 2vw;
     box-shadow: 0 0 70px rgb(9, 0, 47);
         z-index: 1;
-
-
 }
 
 .roboticTitle {
@@ -110,10 +216,12 @@ body, html {
 .Tennis h2 {
     font-family: "Caveat";
     text-align: center;
-    font-size: 10em;
+    font-size: 6em;
     color: rgb(118, 255, 91);
     text-shadow: 0 0 15px rgb(255, 249, 85);
     z-index: 1;
+    margin: 0;
+    margin-bottom: 10vh;  
 }
 
 .tRow1 {
@@ -146,15 +254,6 @@ hr {
     width: 95vw;
         z-index: 1;
 
-}
-header {
-    position: absolute;
-    padding-top: 25px;
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
 }
 
 #passionsHero {
@@ -200,8 +299,24 @@ header {
     position: relative;
     top: 10vh;
     filter: invert();
+}
 
+#PassionsScrollUp {
+    height: 5vw;
+    width: 5vw;
+    z-index: 2;
+    position: relative;
+    filter: invert();
+    rotate: 180deg;
+}
 
+.footer {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (min-aspect-ratio: 16/9) {
     #passionsHero {
@@ -215,36 +330,6 @@ header {
         width: auto;
         height: 100%;
     }
-}
-
-.navBarContainer {
-    display:flex;
-    position: sticky;
-    top: 25px;
-    justify-content: center;
-    z-index: 999;
-}
-
-
-.navBar {
-    background-color: rgba(72, 39, 60, 0.241);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    border: solid 1px rgb(217, 34, 80);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 20px 5px #ff004c85;
-}
-
-.navBar ul {
-    padding-right: 27px;
-    padding-left: 27px;
-}
-
-.navBar ul li {
-    display: inline;
-
 }
 
 #ProjectsBtn:hover {
@@ -294,17 +379,106 @@ header {
 .icolumn1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
 }
 
 #iimg1 {
-    width: 40vw;
+    width: 25vw;
+    border-radius: 20px;
+    border: solid 5px rgb(255, 123, 0);
+    box-shadow: 0 0 50px black;
+
 }
 #iimg2 {
-        width: 18vw;
+    width: 14vw;
+    border-radius: 100%;
+    border: solid 5px rgb(255, 123, 0);
+    box-shadow: 0 0 50px black; 
 
 }
 
 #ivid1 {
-        width: 28vw;
+    width: 20vw;
+    border-radius: 20px;
+    border: solid 5px rgb(255, 123, 0);
+    box-shadow: 0 0 50px black;
 
+}
+
+.icContent {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.nRow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+}
+
+#NexImgLeft {
+    margin-bottom: 15vh;
+    transform: rotate(-20deg);
+    border-radius: 20px;
+    border: solid 5px rgb(255, 170, 0);
+    box-shadow: 0 0 50px black;
+}
+
+#NexImgMid {
+    border-radius: 20px;
+    border: solid 5px rgb(255, 170, 0);
+    box-shadow: 0 0 50px black;
+}
+
+#NexImgRight {
+    margin-bottom: 15vh;
+    transform: rotate(20deg);
+    border-radius: 20px;
+    border: solid 5px rgb(255, 170, 0);
+    box-shadow: 0 0 50px black;
+}
+
+.nRow2 {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.nRow2 img {
+    border-radius: 20px;
+    border: solid 5px rgb(255, 170, 0);
+    box-shadow: 0 0 50px black;
+}
+
+.mbRow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 8vh;
+}
+
+.mbRow2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.mbRow1 img {
+    border: solid 5px rgb(59, 52, 255);
+    border-radius: 2vw;
+    box-shadow: 0 0 25px black;
+    z-index: 1;
+}
+
+.mbRow2 img {
+    border: solid 5px rgb(59, 52, 255);
+    border-radius: 2vw;
+    box-shadow: 0 0 35px black;
+    z-index: 1;
 }
