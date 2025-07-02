@@ -5,7 +5,7 @@ html, body {
     width: 100%;
     background-color: rgb(201, 35, 65);
     overflow-x: hidden;
-    background-image: url(/images/passionbg2.png);
+    background-image: url(../images/passionbg2.png);
     background-repeat: no-repeat;
     background-size: cover;
     scroll-behavior: smooth;
