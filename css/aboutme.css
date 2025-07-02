@@ -5,6 +5,7 @@ html, body, main {
     height: 100%;
     width: 100%;
     background-color: rgb(34, 2, 122);
+    overflow: hidden;
 }
 
 #ham-menu {

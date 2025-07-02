@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/home.css" data-swup-css>
+    <link rel="stylesheet" href="css/pageanimations.css">
+    <script src="https://unpkg.com/@swup/parallel-plugin@0"></script>
+    <script src="https://unpkg.com/@swup/preload-plugin@3"></script>
+    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script src="scripts/pageanimations.js"></script>
 </head>
 
 <body>
@@ -21,43 +27,42 @@
             <li><a href="passions.html">Passions</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="connect.html">Connect</a></li>
-            <li><a href="connect.html">Sources</a></li>
+            <li><a href="https://docs.google.com/document/d/1FoVZdZjUPs0Rhwxja-9P7_74ZELMrmTpZ07ApFGPy6Q/edit?usp=sharing">Sources</a></li>
         </ul>
-    </div>
-
-    </div>
-    <div>
-        <header>
-            <div>
-                <nav class="navBar">
-                    <ul>
-                        <li><a href="projects.html" id="ProjectsBtn" class="nav-item">Projects</a></li>
-                        <li><a href="passions.html" id="PassionsBtn" class="nav-item">Passions</a></li>
-                        <li><a href="index.html" id="HomeBtn" class="nav-item">Home</a></li>
-                        <li><a href="connect.html" id="ConnectBtn" class="nav-item">Connect</a></li>
-                        <li><a href="aboutme.html" id="AboutMeBtn" class="nav-item">About Me</a></li>
-
-                </nav>
-            </div>
-
-        </header>
-
-
-        <main>
-            <video autoplay muted loop id="videoBackground">
-                <source src="images/coolarchesvideo.mp4">
-            </video>
-            <div class="heroContainer">
-                <div class="homeTitleContainer">
-                    <h1 id="introTitle">Bryan Nguyen | A Passionate Learner</h1>
-                    <a id="exploreButton" class="nav-item" href="aboutme.html">
-                        <p>Explore<p></p>
-                    </a></button>
+        </div>
+        <div id="swup" class="transition-slide">
+            <header>
+                <div>
+                    <nav class="navBar">
+                        <ul>
+                            <li><a href="projects.html" id="ProjectsBtn" class="nav-item">Projects</a></li>
+                            <li><a href="passions.html" id="PassionsBtn" class="nav-item">Passions</a></li>
+                            <li><a href="index.html" id="HomeBtn" class="nav-item">Home</a></li>
+                            <li><a href="connect.html" id="ConnectBtn" class="nav-item">Connect</a></li>
+                            <li><a href="aboutme.html" id="AboutMeBtn" class="nav-item">About Me</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-        </main>
+
+            </header>
+
+
+            <main>
+                <video autoplay muted loop id="videoBackground">
+                    <source src="images/coolarchesvideo.mp4">
+                </video>
+                <div class="heroContainer">
+                    <div class="homeTitleContainer">
+                        <h1 id="introTitle">Bryan Nguyen | A Passionate Learner</h1>
+                        <a id="exploreButton" class="nav-item" href="aboutme.html">
+                            <p>Explore<p></p>
+                        </a></button>
+                    </div>
+                </div>
+            </main>
+            <script src="scripts/navbar.js"></script>
+        </div>
     </div>
-    <script src="scripts/navbar.js"></script>
 </body>
 
 </html>
