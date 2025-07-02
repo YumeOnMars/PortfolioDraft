@@ -242,6 +242,8 @@ header {
         z-index: 1;
 }
 
+
+
 .Row1 img {
     border: solid 5px rgb(180, 180, 255);
     border-radius: 2vw;
@@ -255,6 +257,10 @@ header {
     align-items: center;
     padding-top: 5vh;
     z-index: 1;
+}
+
+#r1 {
+    box-shadow: none;
 }
 
 #roboticVideo {
