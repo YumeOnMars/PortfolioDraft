@@ -22,121 +22,128 @@
 </head>
 
 <body>
-    <img src="images/hammenu.png" id="ham-menu">
+    <div class="persistent-ui">
+        <img src="images/hammenu.png" id="ham-menu" height="40px">
 
-    <div class="off-screen-menu">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="passions.html">Passions</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="connect.html">Connect</a></li>
-            <li><a href="https://docs.google.com/document/d/1FoVZdZjUPs0Rhwxja-9P7_74ZELMrmTpZ07ApFGPy6Q/edit?usp=sharing">Sources</a></li>
-        </ul>
-    </div>
-    <header>
-        <div class="navBarContainer">
-            <nav class="navBar">
-                <ul>
-                    <li><a href="projects.html" id="ProjectsBtn" class="nav-item">Projects</a></li>
-                    <li><a href="passions.html" id="PassionsBtn" class="nav-item">Passions</a></li>
-                    <li><a href="home.html" id="HomeBtn" class="nav-item">Home</a></li>
-                    <li><a href="connect.html" id="ConnectBtn" class="nav-item">Connect</a></li>
-                    <li><a href="aboutme.html" id="AboutMeBtn" class="nav-item">About Me</a></li>
-                </ul>
-    </header>
-
-    <main>
-        <div id="passionsAnchor"></div>
-        <div class="PassionsTitle">
-            <h1>Passions</h1>
-            <a href="#img234"><img id="PassionsScroll" src="images/scrollarrow.png"></a>
-            <video loop autoplay muted id="passionsHero">
-                <source src="images/passionscar.mp4">
-            </video>
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="connect.html">Connect</a></li>
+                <li><a
+                        href="https://docs.google.com/document/d/1FoVZdZjUPs0Rhwxja-9P7_74ZELMrmTpZ07ApFGPy6Q/edit?usp=sharing">Sources</a>
+                </li>
+            </ul>
         </div>
+    </div>
 
-        <div class="PassionsContent">
-            <div class="spacer"></div>
+    <div id="swup" class="transition-slide">
+        <header>
+            <div class="navBarContainer">
+                <nav class="navBar">
+                    <ul>
+                        <li><a href="projects.html" id="ProjectsBtn" class="nav-item">Projects</a></li>
+                        <li><a href="passions.html" id="PassionsBtn" class="nav-item">Passions</a></li>
+                        <li><a href="home.html" id="HomeBtn" class="nav-item">Home</a></li>
+                        <li><a href="connect.html" id="ConnectBtn" class="nav-item">Connect</a></li>
+                        <li><a href="aboutme.html" id="AboutMeBtn" class="nav-item">About Me</a></li>
+                    </ul>
+        </header>
 
-            <section class="Robotics">
-                <div class="roboticTitle">
-                    <h2>Robotics</h2>
-                    <img id="img234" src="images/234.png" height="100px">
-                </div>
-                <div class="Row1">
-                    <img id="r2" src="images/robot2.jpeg" height="300px">
-                    <img id="r1" src="images/robotics.png" height="380px">
-                    <img id="r3" src="images/robot1.jpeg" height="300px">
-                </div>
-                <div class="Row2">
-                    <video autoplay loop muted id="roboticVideo" width="450px">
-                        <source src="images/roboticsvideo.mp4">
-                    </video>
-                </div>
-            </section>
+        <main>
+            <div id="passionsAnchor"></div>
+            <div class="PassionsTitle">
+                <h1>Passions</h1>
+                <a href="#img234"><img id="PassionsScroll" src="images/scrollarrow.png"></a>
+                <video loop autoplay muted id="passionsHero">
+                    <source src="images/passionscar.mp4">
+                </video>
+            </div>
 
-            <hr>
+            <div class="PassionsContent">
+                <div class="spacer"></div>
 
-            <section class="Tennis">
-                <h2>Tennis</h2>
-                <div class="tRow1">
-                    <img src="images/tennispic.jpg" height="350px" style="rotate: -15deg">
-                    <img src="images/tennisteam (2).jpg" height="350px" style="rotate: 15deg;">
-                </div>
-                <div class="tRow2">
-                    <img src="images/tennissectional.png" height="400px">
-                </div>
-            </section>
-            <hr>
-            <section class="InteractClub">
-                <h2>Interact Club: <span id="pres">President</span></h2>
-                <div class="icContent">
-                    <div class="icolumn1">
-                        <img src="images/gleaners.jpg" id="iimg1">
-                        <img src="images/interactlogo.png" id="iimg2">
+                <section class="Robotics">
+                    <div class="roboticTitle">
+                        <h2>Robotics</h2>
+                        <img id="img234" src="images/234.png" height="100px">
                     </div>
-                    <div>
-                        <video autoplay muted loop height id="ivid1">
-                            <source src="images/westminster.mp4">
+                    <div class="Row1">
+                        <img id="r2" src="images/robot2.jpeg" height="300px">
+                        <img id="r1" src="images/robotics.png" height="380px">
+                        <img id="r3" src="images/robot1.jpeg" height="300px">
+                    </div>
+                    <div class="Row2">
+                        <video autoplay loop muted id="roboticVideo" width="450px">
+                            <source src="images/roboticsvideo.mp4">
                         </video>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <hr>
+                <hr>
 
-            <section class="Nextech">
-                <h2>NexTech Catapult Intern of 2025</h2>\
-                <div class="nRow1">
-                    <img src="images/lounge.jpeg" height="250px" id="NexImgLeft">
-                    <img src="images/pyramid.JPG" height="320px" id="NexImgMid">
-                    <img src="images/elylili.jpeg" height="200px" id="NexImgRight">
-                </div>
+                <section class="Tennis">
+                    <h2>Tennis</h2>
+                    <div class="tRow1">
+                        <img src="images/tennispic.jpg" height="350px" style="rotate: -15deg">
+                        <img src="images/tennisteam (2).jpg" height="350px" style="rotate: 15deg;">
+                    </div>
+                    <div class="tRow2">
+                        <img src="images/tennissectional.png" height="400px">
+                    </div>
+                </section>
+                <hr>
+                <section class="InteractClub">
+                    <h2>Interact Club: <span id="pres">President</span></h2>
+                    <div class="icContent">
+                        <div class="icolumn1">
+                            <img src="images/gleaners.jpg" id="iimg1">
+                            <img src="images/interactlogo.png" id="iimg2">
+                        </div>
+                        <div>
+                            <video autoplay muted loop height id="ivid1">
+                                <source src="images/westminster.mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="nRow2">
-                    <img src="images/groupphotonextech.JPG" height="350px">
-                    <img src="images/biking.jpeg" height="350px">
-                </div>
-            </section>
+                <hr>
 
-            <section class="Band">
-                <h2>Marching Band | Concert Band | Jazz Band </h2>
-                <div class="mbRow1">
-                    <img src="images/mbselfie.jpeg" height="300px">
-                    <img src="images/lucasoilstad.jpg" height="400px">
-                    <img src="images/alldistricttbn.jpg" height="300px">
-                </div>
-                <div class="mbRow2">
-                    <img src="images/trombonepov1.jpeg" height="300px">
-                    <img src="images/groupphoto.jpg" height="300px">
-                </div>
-            </section>
-        </div>
-        <div class="footer">
-            <a href="#passionsAnchor"><img id="PassionsScrollUp" src="images/scrollarrow.png"></a>
-        </div>
-    </main>
+                <section class="Nextech">
+                    <h2>NexTech Catapult Intern of 2025</h2>\
+                    <div class="nRow1">
+                        <img src="images/lounge.jpeg" height="250px" id="NexImgLeft">
+                        <img src="images/pyramid.JPG" height="320px" id="NexImgMid">
+                        <img src="images/elylili.jpeg" height="200px" id="NexImgRight">
+                    </div>
+
+                    <div class="nRow2">
+                        <img src="images/groupphotonextech.JPG" height="350px">
+                        <img src="images/biking.jpeg" height="350px">
+                    </div>
+                </section>
+
+                <section class="Band">
+                    <h2>Marching Band | Concert Band | Jazz Band </h2>
+                    <div class="mbRow1">
+                        <img src="images/mbselfie.jpeg" height="300px">
+                        <img src="images/lucasoilstad.jpg" height="400px">
+                        <img src="images/alldistricttbn.jpg" height="300px">
+                    </div>
+                    <div class="mbRow2">
+                        <img src="images/trombonepov1.jpeg" height="300px">
+                        <img src="images/groupphoto.jpg" height="300px">
+                    </div>
+                </section>
+            </div>
+            <div class="footer">
+                <a href="#passionsAnchor"><img id="PassionsScrollUp" src="images/scrollarrow.png"></a>
+            </div>
+        </main>
+    </div>
     <script src="scripts/navbar.js"></script>
 </body>
 
