@@ -506,7 +506,6 @@ hr {
     transform: rotate(20deg);
     border-radius: 20px;
     border: solid 5px rgb(255, 170, 0);
-    box-shadow: 0 0 50px black;
 }
 
 .nRow2 {
