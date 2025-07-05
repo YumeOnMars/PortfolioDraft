@@ -69,4 +69,53 @@
     </div>
 </body>
 
+<script>
+const trailLength = 8;
+const trailElements = [];
+const colors = [
+    "#ffffff", // white
+    "#f8e1ff"  // very light pinkish white
+];
+
+// Create trail elements
+for (let i = 0; i < trailLength; i++) {
+    const dot = document.createElement("div");
+    dot.style.position = "fixed";
+    dot.style.pointerEvents = "none";
+    dot.style.width = "14px";
+    dot.style.height = "14px";
+    dot.style.borderRadius = "50%";
+    dot.style.background = `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`;
+    dot.style.opacity = (1 - i / trailLength) * 0.7 + 0.3;
+    dot.style.zIndex = "9999";
+    document.body.appendChild(dot);
+    trailElements.push({el: dot, x: 0, y: 0});
+}
+
+let mouse = {x: window.innerWidth/2, y: window.innerHeight/2};
+
+window.addEventListener("mousemove", e => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+});
+
+function animateTrail() {
+    let x = mouse.x, y = mouse.y;
+    for (let i = 0; i < trailLength; i++) {
+        const dot = trailElements[i];
+        dot.x += (x - dot.x) * 0.3;
+        dot.y += (y - dot.y) * 0.3;
+        dot.el.style.left = (dot.x - 7) + "px";
+        dot.el.style.top = (dot.y - 7) + "px";
+        x = dot.x;
+        y = dot.y;
+    }
+    requestAnimationFrame(animateTrail);
+}
+animateTrail();
+
+// Hide default cursor
+document.body.style.cursor = "none";
+</script>
+
 </html>
