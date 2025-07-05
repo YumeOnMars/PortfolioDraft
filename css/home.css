@@ -192,29 +192,29 @@ header {
 }
 
 #ProjectsBtn:hover {
-    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(38, 0, 128);
     transition: ease-in-out;
 }
 
 #PassionsBtn:hover {
     transition: ease-in-out .5s;
-    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(38, 0, 128);
 }
 
 #ConnectBtn:hover {
     transition: ease-in-out .5s;
-    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(38, 0, 128);
 }
 
 
 #HomeBtn:hover {
     transition: ease-in-out .5s;
-    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(38, 0, 128);
 }
 
 #AboutMeBtn:hover {
     transition: ease-in-out .5s;
-    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(38, 0, 128);
 }
 
 .navBar ul li a {
